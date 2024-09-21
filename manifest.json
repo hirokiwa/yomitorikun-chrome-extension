@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "ブラウザでQR読み取りくん",
+  "version": "1.0",
+  "description": "Adds a custom context menu item using TypeScript",
+  "permissions": [
+    "contextMenus",
+    "activeTab",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "dist/index.js",
+    "type": "module"
+  }
+}
