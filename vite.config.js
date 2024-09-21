@@ -6,6 +6,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         index: './src/index.ts',
+        contentScript: './src/contentScript.ts',
       },
       output: {
         entryFileNames: '[name].js',
