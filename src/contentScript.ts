@@ -23,7 +23,7 @@ const processScreenshot = (screenshotUrl: string) => {
       const code = jsQR(imageData.data, canvas.width, canvas.height);
 
       if (code) {
-        alert(`QRコード内容: ${code.data}`);
+        window.open(code.data);
       } else {
         alert('QRコードが見つかりませんでした');
       }
