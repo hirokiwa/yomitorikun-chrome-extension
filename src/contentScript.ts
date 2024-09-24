@@ -23,7 +23,7 @@ const processScreenshot = (screenshotUrl: string) => {
       const code = jsQR(imageData.data, canvas.width, canvas.height);
 
       if (code) {
-        window.open(code.data);
+        window.open(`https://yomitorikun.hirokiwa.com/?url=${code.data}`);
       } else {
         alert('QRコードが見つかりませんでした');
       }
